@@ -37,7 +37,7 @@
 
 // ! ЗАДАЧИ ----------------------------------------------------------
 
-// ! Посчитать общую сумму покупок в корзине 
+// ! Посчитать общую сумму покупок в корзине -------------------------------------------
 
 // const cart = [54, 28, 105, 70, 92, 17, 120, 58, 78, 23];
 // 2 сделать переменную  total до цикла
@@ -50,14 +50,14 @@
    // total += cart[i];
 // }
 
-// Через for ... of - проще меньше кода
+// Через for ... of - проще меньше кода------------------------------------------------
 
 // for (const value of cart) {
 //    total += value;
 // }
 // console.log('Total: ', total)
 
-// добавить такс
+// добавить такс-----------------------------------------------------------------------
 
 // for (let i = 0; i < cart.length; i += 1) { 
 //    cart[i] = Math.round(cart[i] * 1.1);
@@ -308,3 +308,103 @@
 
 // cards.splice(index, 1, 'Обновленная карточка-4');
 // console.table(cards);
+
+
+
+// ! ФУНКЦИИ!!!-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+
+/*const add = function (x, y) {
+   console.log(x);
+   console.log(y);
+
+   const result = x + y;
+   console.log('x+y=', x + y);
+
+   return result;
+}
+// Вызов функции (),  // add(5, 3);
+
+const r1 = add(5, 3);
+console.log('r1 = ', r1);*/
+
+// return - возврат, прекращение функции 
+
+// const fn = function () {
+   
+//    console.log(1);
+//    console.log(2);
+//    return 555;
+//    console.log(3);
+// };
+
+// console.log(fn());
+
+
+// ! написать функцию calcuLateTotalPrice(items)-----------------------------------------------
+// которая принимает массив цен(чисел) и возвращает их сумму
+
+// const cart = [54, 28, 105, 70, 92, 17, 120, 12, 25, 90];
+// let total = 0;
+
+// for (const value of cart) {
+//    total += value;
+// }
+
+// console.log('Total: ', total);
+
+
+// через функцию ---------------------------------------------------------------------
+
+// const calcuLateTotalPrice = function (items) {
+//    console.log('items внутри функции', items);
+
+//    let total = 0;
+
+//    for (const item of items) {
+//       total += item;
+//    }
+
+//    return total;
+// }
+
+// console.log(calcuLateTotalPrice([1, 2, 3]));
+// console.log(calcuLateTotalPrice([5, 10, 15, 20]));
+// console.log(calcuLateTotalPrice([100, 200, 300]));
+
+// ! функция logItems(items) для перебора и логирования массива-------------------------------------------
+
+// const logItems  = function (items) {
+//    for (const item of items) {
+//       console.log(item);
+//    }
+// }
+
+// logItems(['Mango', 'Poly', 'Kiwi', 'Ajax']);
+// logItems([1, 2, 3, 4, 5,]);
+// logItems(['клавиатура', "наушники", "часы"]);
+
+
+// ! Функция  findLogin(allLogins, login) для поиска логина---------------------------------------------
+
+const logins = ['m4ngoDoge', 'k1widab3st', 'poly1scute', 'aj4xth3m4n'];
+// const loginToFind = 'poly1scute';
+
+// const message = logins.includes(loginToFind) ? `Пользователь ${loginToFind} найден.` : `Пользователь ${loginToFind} не найден.`;
+
+// console.log(message);
+
+const findLogin = function (allLogins, loginToFind) {
+
+   for (const login of allLogins) {
+      if (login === loginToFind) {
+         return `пользователь ${loginToFind} найден.`;
+      }
+   }
+
+   return `пользователь ${loginToFind} нe найден.`;
+};
+
+console.log(findLogin(logins, 'dfdfsgdfhg432'));
+console.log(findLogin(logins, 'k1widab3st'));
+console.log(findLogin(logins, 'dfdffhg'));
+console.log(findLogin(logins, 'aj4xth3m4n'));
