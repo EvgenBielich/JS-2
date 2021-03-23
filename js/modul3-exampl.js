@@ -71,14 +71,14 @@
 
 // ! РАботa с коллекцией (массивом обьектов) 
 
-const friends = [
-   { name: 'Mango', online: false },
-   { name: 'Kiwi', online: true },
-   { name: 'Poly', online: false },
-   { name: 'Ajax', online: false },
-];
+// const friends = [
+//    { name: 'Mango', online: false },
+//    { name: 'Kiwi', online: true },
+//    { name: 'Poly', online: false },
+//    { name: 'Ajax', online: false },
+// ];
 
-console.table(friends);
+// console.table(friends);
 
 // for (const friend of friends) {
 //    console.log(friend);
@@ -140,26 +140,26 @@ console.table(friends);
 
 // console.log(getOnlineFriends(friends));
 
-//! Пoлучаем имена друзей которіе  Heонлайн --------------------
+ //! Пoлучаем имена друзей которіе  Heонлайн --------------------
 
-const getOfflineFriends = function (allFriends) {
-   const offlineFriends = [];
+// const getOfflineFriends = function (allFriends) {
+//    const offlineFriends = [];
 
-   for (const friend  of allFriends) {
-      console.log(friend);
-      console.log(friend.online);
+//    for (const friend  of allFriends) {
+//       console.log(friend);
+//       console.log(friend.online);
 
-      if (!friend.online) {
-         offlineFriends.push(friend);
-      } 
-   }
+//       if (!friend.online) {
+//          offlineFriends.push(friend);
+//       } 
+//    }
 
-   return offlineFriends;
-};
+//    return offlineFriends;
+// };
 
-console.log(getOfflineFriends(friends));
+// console.log(getOfflineFriends(friends));
 
-// ! корзина
+ // ! корзина
 
 
 
